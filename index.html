@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Beginners</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        #home-container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-        }
-
-        #home-container h1 {
-            font-family: 'Montserrat', sans-serif;;
-            font-size: 3rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-align: center;
-            color: cornsilk;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="home-container">
-        <h1>Under Construction</h1>
-    </div>
-    
+    <nav>
+        <div id="navbar">
+            <h1>Torrefazione</h1>
+            <ul id="menu-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Torrefazione</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ab et? </p>
+        </div>
+    </section>
+
+    <section class="chi-siamo">
+        <div class="container">
+            <div class="left-space">
+                <img src="img/caffe-sacchi.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>La nostra storia</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quia exercitationem veritatis eos,
+                    ipsum
+                    delectus, ab vitae culpa accusamus deleniti esse temporibus cum hic doloribus. Cupiditate similique
+                    a,
+                    voluptates possimus repellat aperiam, sint, consequatur rerum sapiente odit minima corporis modi
+                    nulla
+                    nam sequi fugiat! Esse culpa dicta facere eos provident commodi amet aliquam, cupiditate dolorem
+                    dolore
+                    voluptas quisquam saepe cum tempore omnis autem, fuga sint debitis ex explicabo consequuntur sequi?
+                    Temporibus, reprehenderit. Odit, non aliquid accusantium sint eius a, laudantium voluptatum nulla
+                    numquam nisi quibusdam hic, laborum omnis dolorem distinctio natus quod animi eum maxime debitis ex
+                    quia! Aperiam, magnam.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="contatti">
+        <div class="container">
+            <h2>Contatti</h2>
+            <form action="#">
+                <div>
+                    <label for="nomimativo">Nominativo</label>
+                    <input type="text" name="nominativo" id="nominativo">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="messaggio">Messaggio</label>
+                    <textarea name="messaggio" id="messaggio" rows="13"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </section>
+
+    <section class="mappa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.4313933086705!2d12.344195551341976!3d45.43447497899813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eae262538fc77%3A0xf2c5f93f3b2d46a!2sCaff%C3%A8%20Girani%20Antica%20torrefazione%20veneziana!5e1!3m2!1sit!2slu!4v1592916623108!5m2!1sit!2slu"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>footer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, aut ratione repellat aspernatur minima
+                assumenda quae quo tempore inventore asperiores.</p>
+        </div>
+
+    </footer>
+
+
+
 </body>
+
 </html>
