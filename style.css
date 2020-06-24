@@ -82,12 +82,30 @@ section.hero .container h1 {
     color: #fff;
 }
 
+section.hero::after {
+    content: "";
+    position: absolute;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 38, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/* CHI SIAMO */
+
 section.chi-siamo {
     background-color: cornsilk;
-    min-height: 350px;
+    min-height: 450px;
     display: flex;
     align-items: center;
-    padding: 40px 20px 30px;
+    /* padding: 40px 20px 30px; */
+    background-color: brown;
+    background-image: url('img/caffe-sacchi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.chi-siamo .container {
@@ -100,22 +118,35 @@ section.chi-siamo .container .left-space {
     width: 50%;
 }
 
-section.chi-siamo .container .left-space img {
+/* section.chi-siamo .container .left-space img {
     width: 100%;
     object-fit: cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.582);
-}
+} */
 
 section.chi-siamo .container .content {
     width: 50%;
-    padding: 20px;
+    min-height: 450px;
+    margin: 0;
+    padding: 30px;
     line-height: 1.5;
+    background-color: ivory;
+    border-radius: 3px;
 }
+
+section.chi-siamo .container .content hr {
+    margin: 15px 0;
+    border: 1px solid #000;
+    width: 50%;
+}
+
+/* CONTATTI */
 
 section#contatti {
     min-height: 350px;
     padding: 50px 20px;
-    scroll-behavior: smooth;
+
+
 }
 
 section#contatti h2 {
@@ -123,7 +154,7 @@ section#contatti h2 {
 }
 
 section#contatti form {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -164,7 +195,7 @@ input[type=submit]:hover {
 /* SECTION MAPPA */
 section#dove {
     position: relative;
-    height: 400px;
+    min-height: 400px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -175,18 +206,16 @@ section#dove>div {
     width: 50%;
 }
 
-.mappa {
-    position: relative;
-}
-
-.mappa iframe {
-    position: re;
-
-}
 
 section#dove .indirizzo {
     padding: 25px;
     background-color: cornsilk;
+
+}
+
+.indirizzo h3 {
+    padding: 15px;
+    font-weight: bold;
 }
 
 .indirizzo ul {
@@ -197,20 +226,25 @@ section#dove .indirizzo {
     padding: 15px;
 }
 
+.indirizzo ul li span {
+    display: inline;
+    padding: 15px;
+}
+
 /* FOOTER */
 footer {
-    display: block;
     background-color: black;
     height: 100px;
     min-height: 100px;
     width: 100%;
     color: blanchedalmond;
+    z-index: 20;
 
 }
 
 footer .container {
     padding: 30px;
-
+    display: block;
 }
 
 #to-top {
@@ -219,12 +253,17 @@ footer .container {
     height: 40px;
     bottom: 10px;
     right: 10px;
-    background-color: blue;
+    background-color: green;
     color: #fff;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
+}
+
+#to-top a {
+    color: white;
 }
 
 
@@ -244,18 +283,13 @@ footer .container {
 
     section.hero {
         min-height: 250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        background-image: url('img/hero-section.jpg');
-        position: relative;
     }
 
     section.hero .container h1 {
         font-size: 2rem;
+        font-weight: bold;
         text-align: center;
+        text-transform: uppercase;
     }
 
     section.hero .container p {
@@ -285,33 +319,18 @@ footer .container {
     }
 
     section#dove {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     section#dove>div {
         width: 100%;
-        height: 400px;
-
     }
 
-    section#dove>iframe {
-        width: 100%;
-
-
-    }
-
-
-
-    #mappa iframe {}
 
     footer {
-        position: relative;
-        height: 120px;
-        width: 100vw;
-        margin-top: 5px;
-
+        width: 100%;
+        height: 100px;
+        z-index: 100;
     }
 
 }
